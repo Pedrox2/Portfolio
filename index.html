@@ -1,122 +1,546 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Portfólio</title>
-
-  <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Pedro Martins — Desenvolvedor Junior</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;500;600;700;800&family=DM+Sans:ital,wght@0,300;0,400;0,500;1,300&display=swap" rel="stylesheet" />
 </head>
 <body>
 
-  <nav>
 
-    <a href="#sobre">Sobre</a>
-    <a href="#projetos">Projetos</a>
-    <a href="#skills">Skills</a>
-    <a href="#contato">Contato</a>
+  <header class="navbar" id="navbar">
+    <div class="nav-inner">
+      <a href="#hero" class="nav-logo">
+        <span class="logo-bracket">&lt;</span>Pedro<span class="logo-accent">.</span>dev<span class="logo-bracket">/&gt;</span>
+      </a>
 
-  </nav>
+     
+      <input type="checkbox" id="nav-toggle" class="nav-toggle-input" />
+      <label for="nav-toggle" class="nav-hamburger" aria-label="Menu">
+        <span></span><span></span><span></span>
+      </label>
 
- 
-  <section class="hero">
+      <nav class="nav-menu">
+        <a href="#sobre" class="nav-link">Sobre</a>
+        <a href="#projetos" class="nav-link">Projetos</a>
+        <a href="#skills" class="nav-link">Skills</a>
+        <a href="#contato" class="nav-link">Contato</a>
+        <a href="#contato" class="nav-cta">Hire me</a>
+      </nav>
+    </div>
+  </header>
 
-    <div class="hero-card">
 
-        <img src="img/image.png" 
-        alt="Foto Pedro" 
-        class="foto">
+  <section class="hero" id="hero">
 
-        <div class="hero-text">
-
-            <h1>PEDRO MARTINS</h1>
-
-            <h2>Desenvolvedor Junior</h2>
-
-            <p>
-                Criando interfaces modernas e funcionais
-            </p>
-
-            <a href="#projetos" class="button">
-                Ver Projetos
-            </a>
-
-        </div>
-
+    <div class="hero-bg">
+      <div class="hero-grid"></div>
+      <div class="hero-glow glow-1"></div>
+      <div class="hero-glow glow-2"></div>
+      <div class="hero-glow glow-3"></div>
+      <div class="orb orb-1"></div>
+      <div class="orb orb-2"></div>
     </div>
 
-</section>
+    <div class="hero-inner container">
+      <div class="hero-text">
+        <div class="hero-badge">
+          <span class="badge-dot"></span>
+          Disponível para projetos
+        </div>
+        <h1 class="hero-name">
+          <span class="name-line">PEDRO</span>
+          <span class="name-line name-accent">MARTINS</span>
+        </h1>
+        <p class="hero-role">
+          <span class="role-prefix">//</span> Desenvolvedor Junior
+        </p>
+        <p class="hero-desc">
+          Estudante de Desenvolvimento de Software Multiplataforma criando interfaces modernas, funcionais e experiências digitais memoráveis.
+        </p>
+        <div class="hero-actions">
+          <a href="#projetos" class="btn btn-primary">
+            <span>Ver Projetos</span>
+            <svg width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M3 8h10M9 4l4 4-4 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </a>
+          <a href="#contato" class="btn btn-ghost">Contato</a>
+        </div>
 
-  <section id="sobre" class="sobre">
-        <h2>Sobre Mim</h2>
-        <p>Estudante de Desenvolvimento de Software Multiplataforma focado em Criar interfaces modernas e funcionais</p>
+        <div class="hero-stats">
+          <div class="stat">
+            <span class="stat-num">4+</span>
+            <span class="stat-label">Projetos</span>
+          </div>
+          <div class="stat-divider"></div>
+          <div class="stat">
+            <span class="stat-num">2+</span>
+            <span class="stat-label">Anos estudando</span>
+          </div>
+          <div class="stat-divider"></div>
+          <div class="stat">
+            <span class="stat-num">5</span>
+            <span class="stat-label">Tecnologias</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="hero-photo-wrap">
+        <div class="photo-ring ring-outer"></div>
+        <div class="photo-ring ring-inner"></div>
+        <div class="photo-frame">
+          <div class="photo-placeholder">
+            <svg viewBox="0 0 120 120" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <circle cx="60" cy="45" r="22" fill="#38bdf8" opacity=".18"/>
+              <circle cx="60" cy="45" r="22" stroke="#38bdf8" stroke-width="1.5" opacity=".4"/>
+              <path d="M20 100c0-22 18-38 40-38s40 16 40 38" stroke="#38bdf8" stroke-width="1.5" stroke-linecap="round" opacity=".4"/>
+              <text x="60" y="50" text-anchor="middle" fill="#38bdf8" font-size="14" font-family="Syne" opacity=".6">PM</text>
+            </svg>
+            <span><img src="img/image.png" alt=""></span>
+          </div>
+        </div>
+       
+        <div class="float-tag tag-1">
+          <span class="tag-icon">⚡</span> React Native
+        </div>
+        <div class="float-tag tag-2">
+          <span class="tag-icon">🎨</span> UI/UX
+        </div>
+      </div>
+    </div>
+
+    <div class="scroll-indicator">
+      <div class="scroll-dot"></div>
+      <span>scroll</span>
+    </div>
   </section>
 
+
+  <section class="sobre" id="sobre">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">// 01</span>
+        <h2 class="section-title">Sobre <span class="accent">Mim</span></h2>
+        <div class="title-line"></div>
+      </div>
+
+      <div class="sobre-grid">
+        <div class="sobre-text-col">
+          <p class="sobre-lead">
+            Olá! Sou <strong>Pedro Martins</strong>, estudante de Desenvolvimento de Software Multiplataforma focado em criar interfaces modernas e funcionais.
+          </p>
+          <p class="sobre-body">
+            Apaixonado por tecnologia e design, busco sempre unir estética e funcionalidade em cada projeto. Estou em constante aprendizado, explorando as mais modernas ferramentas do mercado de desenvolvimento.
+          </p>
+
+          <div class="sobre-tags">
+            <span class="chip">Mobile Dev</span>
+            <span class="chip">Front-end</span>
+            <span class="chip">React Native</span>
+            <span class="chip">UI Design</span>
+          </div>
+        </div>
+
+        <div class="sobre-cards-col">
+          <div class="info-card">
+            <div class="info-icon">🎓</div>
+            <div>
+              <h4>Formação</h4>
+              <p>Desenvolvimento de Software Multiplataforma — em curso</p>
+            </div>
+          </div>
+          <div class="info-card">
+            <div class="info-icon">📍</div>
+            <div>
+              <h4>Localização</h4>
+              <p>Brasil</p>
+            </div>
+          </div>
+          <div class="info-card">
+            <div class="info-icon">🚀</div>
+            <div>
+              <h4>Foco</h4>
+              <p>Interfaces modernas & aplicações mobile</p>
+            </div>
+          </div>
+          <div class="info-card">
+            <div class="info-icon">💡</div>
+            <div>
+              <h4>Status</h4>
+              <p>Disponível para oportunidades</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+     
+      <div class="timeline">
+        <div class="timeline-item">
+          <div class="timeline-dot"></div>
+          <div class="timeline-content">
+            <span class="timeline-year">2022</span>
+            <h4>Início da Jornada</h4>
+            <p>Primeiros passos com HTML e CSS</p>
+          </div>
+        </div>
+        <div class="timeline-item">
+          <div class="timeline-dot"></div>
+          <div class="timeline-content">
+            <span class="timeline-year">2023</span>
+            <h4>JavaScript & React</h4>
+            <p>Aprofundamento em desenvolvimento web e mobile</p>
+          </div>
+        </div>
+        <div class="timeline-item">
+          <div class="timeline-dot"></div>
+          <div class="timeline-content">
+            <span class="timeline-year">2024</span>
+            <h4>TCC & Projetos Reais</h4>
+            <p>Desenvolvimento do projeto Achados e Perdidos</p>
+          </div>
+        </div>
+        <div class="timeline-item active">
+          <div class="timeline-dot"></div>
+          <div class="timeline-content">
+            <span class="timeline-year">2025</span>
+            <h4>Pronto para o Mercado</h4>
+            <p>Buscando oportunidades profissionais</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
   <section class="projetos" id="projetos">
-    <h2>Projetos</h2>
-    <div class="cards">
-        <div class="card">
-            <h3>Achados e perdidos-Projeto de TCC</h3>
-            <p>Site para cadastrar itens perdidos e encontrados</p>
-             <a href="https://github.com/Grinaldi20/3etim-tcc-catchu"
-               target="_blank"
-                class="button">
-                Ver projeto
-    </a>
-        </div>
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">// 02</span>
+        <h2 class="section-title">Meus <span class="accent">Projetos</span></h2>
+        <div class="title-line"></div>
+      </div>
 
-    <div class="card">
-            <h3>Questionário em React Native</h3>
-            <p>Quiz feito em React no expo e versionado no Github</p>
-              <a href="https://github.com/Pedrox2/Questionario-basico-em-React-native-"
-              target="_blank"
-              class="button">
-               Ver projeto
-    </a>
-        </div>
+      <div class="projetos-grid">
 
-          <div class="card">
-            <h3>Temporizador em React Native</h3>
-            <p>Timer feito em React no expo e versionado no Github</p>
-              <a href="https://github.com/Pedrox2/Temporizador"
-              target="_blank"
-              class="button">
-               Ver projeto
-    </a>
-        </div>
+     
+        <article class="project-card featured">
+          <div class="card-mockup">
+            <div class="mockup-browser">
+              <div class="browser-bar"><span></span><span></span><span></span></div>
+              <div class="browser-body">
+                <div class="mockup-icon">🔍</div>
+                <div class="mockup-label">Achados & Perdidos</div>
+                <div class="mockup-lines">
+                  <div class="ml"></div><div class="ml short"></div><div class="ml"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="card-body">
+            <div class="card-header-row">
+              <span class="project-badge">⭐ Destaque</span>
+              <span class="project-type">TCC</span>
+            </div>
+            <h3 class="project-title">Achados e Perdidos</h3>
+            <p class="project-desc">Plataforma para cadastro e localização de itens perdidos, desenvolvida como projeto de conclusão de curso. Sistema completo com autenticação e gerenciamento de itens.</p>
+            <div class="project-tags">
+              <span class="tech-tag">React Native</span>
+              <span class="tech-tag">JavaScript</span>
+              <span class="tech-tag">Mobile</span>
+            </div>
+            <div class="card-actions">
+              <a href="https://github.com/Grinaldi20/3etim-tcc-catchu" class="btn-card btn-card-primary">Ver Projeto</a>
+              <a href="https://github.com/Grinaldi20/3etim-tcc-catchu" class="btn-card btn-card-ghost">
+                <svg width="14" height="14" viewBox="0 0 16 16" fill="currentColor"><path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0016 8c0-4.42-3.58-8-8-8z"/></svg>
+                GitHub
+              </a>
+            </div>
+          </div>
+        </article>
 
-           <div class="card">
-            <h3>Conversor de moedas em React Native</h3>
-            <p>Conversor feito em React no expo e versionado no Github</p>
-              <a href="https://github.com/Pedrox2/Conversor-de-moedas-em-react-native"
-              target="_blank"
-              class="button">
-               Ver projeto
-    </a>
-        </div>
+        
+        <article class="project-card">
+          <div class="card-mockup mobile-mockup">
+            <div class="phone-frame">
+              <div class="phone-screen">
+                <div class="mockup-icon">❓</div>
+                <div class="mockup-label">Quiz</div>
+                <div class="mockup-lines">
+                  <div class="ml short"></div><div class="ml"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="card-body">
+            <div class="card-header-row">
+              <span class="project-type">Mobile</span>
+            </div>
+            <h3 class="project-title">Questionário</h3>
+            <p class="project-desc">Aplicativo de questionário interativo desenvolvido em React Native com interface intuitiva e feedbacks visuais.</p>
+            <div class="project-tags">
+              <span class="tech-tag">React Native</span>
+              <span class="tech-tag">JavaScript</span>
+            </div>
+            <div class="card-actions">
+              <a href="https://github.com/Pedrox2/Questionario-basico-em-React-native-" class="btn-card btn-card-primary">Ver Projeto</a>
+              <a href="https://github.com/Pedrox2/Questionario-basico-em-React-native-" class="btn-card btn-card-ghost">
+                <svg width="14" height="14" viewBox="0 0 16 16" fill="currentColor"><path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0016 8c0-4.42-3.58-8-8-8z"/></svg>
+                GitHub
+              </a>
+            </div>
+          </div>
+        </article>
+
+ 
+        <article class="project-card">
+          <div class="card-mockup mobile-mockup">
+            <div class="phone-frame">
+              <div class="phone-screen">
+                <div class="mockup-icon">⏱️</div>
+                <div class="mockup-label">Timer</div>
+                <div class="mockup-lines">
+                  <div class="ml short"></div><div class="ml"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="card-body">
+            <div class="card-header-row">
+              <span class="project-type">Mobile</span>
+            </div>
+            <h3 class="project-title">Temporizador</h3>
+            <p class="project-desc">Aplicativo de temporizador desenvolvido em React Native com controles precisos e design clean para produtividade.</p>
+            <div class="project-tags">
+              <span class="tech-tag">React Native</span>
+              <span class="tech-tag">JavaScript</span>
+            </div>
+            <div class="card-actions">
+              <a href="https://github.com/Pedrox2/Temporizador" class="btn-card btn-card-primary">Ver Projeto</a>
+              <a href="https://github.com/Pedrox2/Temporizador" class="btn-card btn-card-ghost">
+                <svg width="14" height="14" viewBox="0 0 16 16" fill="currentColor"><path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0016 8c0-4.42-3.58-8-8-8z"/></svg>
+                GitHub
+              </a>
+            </div>
+          </div>
+        </article>
+
+        
+        <article class="project-card">
+          <div class="card-mockup mobile-mockup">
+            <div class="phone-frame">
+              <div class="phone-screen">
+                <div class="mockup-icon">💱</div>
+                <div class="mockup-label">Conversor</div>
+                <div class="mockup-lines">
+                  <div class="ml short"></div><div class="ml"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="card-body">
+            <div class="card-header-row">
+              <span class="project-type">Mobile</span>
+            </div>
+            <h3 class="project-title">Conversor de Moedas</h3>
+            <p class="project-desc">Aplicativo de conversão de moedas em tempo real com suporte a múltiplas divisas e interface elegante.</p>
+            <div class="project-tags">
+              <span class="tech-tag">React Native</span>
+              <span class="tech-tag">API</span>
+              <span class="tech-tag">JavaScript</span>
+            </div>
+            <div class="card-actions">
+              <a href="https://github.com/Pedrox2/Conversor-de-moedas-em-react-native" class="btn-card btn-card-primary">Ver Projeto</a>
+              <a href="https://github.com/Pedrox2/Conversor-de-moedas-em-react-native" class="btn-card btn-card-ghost">
+                <svg width="14" height="14" viewBox="0 0 16 16" fill="currentColor"><path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0016 8c0-4.42-3.58-8-8-8z"/></svg>
+                GitHub
+              </a>
+            </div>
+          </div>
+        </article>
+
+      </div>
     </div>
   </section>
 
   <section class="skills" id="skills">
-    <h2>Skills</h2>
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">// 03</span>
+        <h2 class="section-title">Minhas <span class="accent">Skills</span></h2>
+        <div class="title-line"></div>
+      </div>
 
-    <div class="skills-cards">
-        <div class="skill"> HTML </div>
-        <div class="skill"> CSS (intermediário) </div>
-        <div class="skill"> JAVASCRIPT (básico)</div>
-        <div class="skill"> REACT (básico) </div>
+      <div class="skills-grid">
+
+        <div class="skill-card">
+          <div class="skill-icon-wrap">
+            <div class="skill-icon">
+              <svg viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M4 4l2.5 22L16 29l9.5-3L28 4H4z" fill="#e34f26" opacity=".9"/>
+                <path d="M16 26.5l7.7-2.1 2.1-23.4H16v25.5z" fill="#ef652a" opacity=".7"/>
+                <path d="M16 13h-4.5l-.3-3.5H16V6H7.5l.8 9H16v-2zm0 8.5l-.1.1-3.8-1-.2-2.6H8.8l.5 5.5L16 25v-3.5z" fill="white"/>
+              </svg>
+            </div>
+          </div>
+          <div class="skill-info">
+            <div class="skill-name-row">
+              <h4>HTML</h4>
+              <span class="skill-pct">85%</span>
+            </div>
+            <div class="skill-level">Avançado</div>
+            <div class="progress-bar">
+              <div class="progress-fill" style="--w:85%"></div>
+            </div>
+          </div>
+        </div>
+
+        <div class="skill-card">
+          <div class="skill-icon-wrap">
+            <div class="skill-icon">
+              <svg viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M4 4l2.5 22L16 29l9.5-3L28 4H4z" fill="#264de4" opacity=".9"/>
+                <path d="M16 26.5l7.7-2.1 2.1-23.4H16v25.5z" fill="#2965f1" opacity=".7"/>
+                <path d="M16 13v-3h8.5l-.3 3.5L16 17v3.5l7.7-2.1.3-3.4H24l-.3 3-7.7 2v3.5l7.2-2 1-11H16V6H7.5l.8 9H16v-2z" fill="white"/>
+              </svg>
+            </div>
+          </div>
+          <div class="skill-info">
+            <div class="skill-name-row">
+              <h4>CSS</h4>
+              <span class="skill-pct">70%</span>
+            </div>
+            <div class="skill-level">Intermediário</div>
+            <div class="progress-bar">
+              <div class="progress-fill" style="--w:70%"></div>
+            </div>
+          </div>
+        </div>
+
+        <div class="skill-card">
+          <div class="skill-icon-wrap">
+            <div class="skill-icon js-icon">
+              <span>JS</span>
+            </div>
+          </div>
+          <div class="skill-info">
+            <div class="skill-name-row">
+              <h4>JavaScript</h4>
+              <span class="skill-pct">30%</span>
+            </div>
+            <div class="skill-level">Básico</div>
+            <div class="progress-bar">
+              <div class="progress-fill" style="--w:30%"></div>
+            </div>
+          </div>
+        </div>
+
+        <div class="skill-card">
+          <div class="skill-icon-wrap">
+            <div class="skill-icon react-icon">
+              <svg viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <ellipse cx="16" cy="16" rx="3" ry="3" fill="#61dafb"/>
+                <ellipse cx="16" cy="16" rx="14" ry="5.5" stroke="#61dafb" stroke-width="1.2" fill="none"/>
+                <ellipse cx="16" cy="16" rx="14" ry="5.5" stroke="#61dafb" stroke-width="1.2" fill="none" transform="rotate(60 16 16)"/>
+                <ellipse cx="16" cy="16" rx="14" ry="5.5" stroke="#61dafb" stroke-width="1.2" fill="none" transform="rotate(120 16 16)"/>
+              </svg>
+            </div>
+          </div>
+          <div class="skill-info">
+            <div class="skill-name-row">
+              <h4>React Native</h4>
+              <span class="skill-pct">45%</span>
+            </div>
+            <div class="skill-level">Básico</div>
+            <div class="progress-bar">
+              <div class="progress-fill" style="--w:45%"></div>
+            </div>
+          </div>
+        </div>
+
+      </div>
     </div>
   </section>
 
-  <footer id="contato">
-    <h2>Contato</h2>
-    <p>Email: Phfernandesmartins669@gmail.com</p>
-    <a href="https://github.com/Pedrox2" target="_blank">Acesse: Github</a><br>
-    <a href="https://www.linkedin.com/in/pedro-martins-5195a5394/">Acesse: linkedin</a>
+  <section class="contato" id="contato">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">// 04</span>
+        <h2 class="section-title">Vamos <span class="accent">Conversar</span></h2>
+        <div class="title-line"></div>
+      </div>
 
-    <span>
-        2026 Pedro Martins
-    </span>
+      <div class="contact-inner">
+        <div class="contact-text">
+          <p class="contact-lead">Estou disponível para oportunidades, projetos freelance ou uma boa conversa sobre tecnologia.</p>
+          <p class="contact-sub">Não hesite em entrar em contato — responderei o mais breve possível.</p>
+        </div>
+
+        <div class="contact-cards">
+          <a href="mailto:phfernandesmartins669@gmail.com" class="contact-card">
+            <div class="contact-icon">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/>
+                <polyline points="22,6 12,13 2,6"/>
+              </svg>
+            </div>
+            <div class="contact-info">
+              <span class="contact-label">Email</span>
+              <span class="contact-value">phfernandesmartins669@gmail.com</span>
+            </div>
+            <svg class="contact-arrow" width="18" height="18" viewBox="0 0 16 16" fill="none"><path d="M3 8h10M9 4l4 4-4 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </a>
+
+          <a href="https://github.com/Pedrox2" target="_blank" rel="noopener" class="contact-card">
+            <div class="contact-icon">
+              <svg width="22" height="22" viewBox="0 0 16 16" fill="currentColor"><path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0016 8c0-4.42-3.58-8-8-8z"/></svg>
+            </div>
+            <div class="contact-info">
+              <span class="contact-label">GitHub</span>
+              <span class="contact-value">github.com/Pedrox2</span>
+            </div>
+            <svg class="contact-arrow" width="18" height="18" viewBox="0 0 16 16" fill="none"><path d="M3 8h10M9 4l4 4-4 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </a>
+
+          <a href="https://www.linkedin.com/in/pedro-martins-5195a5394/" target="_blank" rel="noopener" class="contact-card">
+            <div class="contact-icon">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="currentColor">
+                <path d="M16 8a6 6 0 016 6v7h-4v-7a2 2 0 00-2-2 2 2 0 00-2 2v7h-4v-7a6 6 0 016-6zM2 9h4v12H2z"/>
+                <circle cx="4" cy="4" r="2"/>
+              </svg>
+            </div>
+            <div class="contact-info">
+              <span class="contact-label">LinkedIn</span>
+              <span class="contact-value">linkedin.com/in/pedro-martins-5195a5394/</span>
+            </div>
+            <svg class="contact-arrow" width="18" height="18" viewBox="0 0 16 16" fill="none"><path d="M3 8h10M9 4l4 4-4 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="container footer-inner">
+      <span class="footer-logo">
+        <span class="logo-bracket">&lt;</span>Pedro<span class="logo-accent">.</span>dev<span class="logo-bracket">/&gt;</span>
+      </span>
+      <p class="footer-copy">© 2025 Pedro Martins. Feito com 💙 e muito CSS.</p>
+      <div class="footer-socials">
+        <a href="https://github.com" target="_blank" aria-label="GitHub">
+          <svg width="18" height="18" viewBox="0 0 16 16" fill="currentColor"><path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0016 8c0-4.42-3.58-8-8-8z"/></svg>
+        </a>
+        <a href="https://linkedin.com" target="_blank" aria-label="LinkedIn">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M16 8a6 6 0 016 6v7h-4v-7a2 2 0 00-2-2 2 2 0 00-2 2v7h-4v-7a6 6 0 016-6zM2 9h4v12H2z"/><circle cx="4" cy="4" r="2"/></svg>
+        </a>
+        <a href="mailto:pedro@email.com" aria-label="Email">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+        </a>
+      </div>
+    </div>
   </footer>
+
 </body>
 </html>
